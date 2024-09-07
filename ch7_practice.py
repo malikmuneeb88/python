@@ -9,10 +9,10 @@ for i in range(1, 11):
 
 
 #Q2: Write a program to greet all the person names stored in a list l1 and which starts with S.
-L1 = ["Muneeb", "Syed", "Zain", "Shah"]
-for name in L1:
-   if name.startswith("S"):
-       print("Assalam u alaikum " + name)
+# L1 = ["Muneeb", "Syed", "Zain", "Shah"]
+# for name in L1:
+#    if name.startswith("S"):
+#        print("Assalam u alaikum " + name)
 
 
 

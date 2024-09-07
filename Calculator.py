@@ -8,10 +8,7 @@ def multiply(x, y):
     return x * y
 
 def divide(x, y):
-    if y != 0:
-        return x / y
-    else:
-        print("Error! Division by zero")
+    return x / y
 
 def calculator():
     print("Welcome to Calculator")
@@ -20,12 +17,13 @@ def calculator():
     while True:
         operation = input("Enter operation(+,-,*,/) or 'exit' to end:\n")
 
-        if operation == 'exit':
-            print("Hope U like it !!")
-            break
 
         num2 = float(input("Enter second number:\n"))
 
+        if operation == 'exit':
+            print("Hope U like it !!")
+            break
+        
         if operation == '+':
             result = add(num1, num2)
 
