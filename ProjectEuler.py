@@ -647,16 +647,28 @@ There exists exactly one Pythagorean triplet for which a + b + c = 1000. Find th
 
 
 
-'''Q17: If the numbers 1 to 15 are written out in words: one, two, three, four, five, then there are 3 + 3 + 5 + 4 + 4 = 19 letters used in total.
-If all the numbers from 1 to 1000 (one thousand) inclusive were written out in words, how many letters would be used?
-NOTE: Do not count spaces or hyphens. For example, 342(three hundred and forty-two) contains 23 letters and 115 (one hundred and fifteen) contains letters. 
-The use of "and" when writing out numbers is in compliance with British usage.'''
-from num2words import num2words
+# '''Q17: If the numbers 1 to 15 are written out in words: one, two, three, four, five, then there are 3 + 3 + 5 + 4 + 4 = 19 letters used in total.
+# If all the numbers from 1 to 1000 (one thousand) inclusive were written out in words, how many letters would be used?
+# NOTE: Do not count spaces or hyphens. For example, 342(three hundred and forty-two) contains 23 letters and 115 (one hundred and fifteen) contains 20 letters. 
+# The use of "and" when writing out numbers is in compliance with British usage.'''
+# from num2words import num2words
 
-def calculate_number_to_words(start, end):
-    for number in range(start, end + 1):
-        words = num2words(number)
-        print(f"{number}: {words}")
-calculate_number_to_words(1, 1000)
+# def calculate_number_to_words(start, end):
+#     total_letters = 0
+    
+#     for number in range(start, end + 1):
+#         words = num2words(number, lang='en', to='cardinal')
+#         cleaned_words = words.replace(' ', '').replace('-', '')
+#         total_letters += len(cleaned_words)
+        
+#     return total_letters
+
+# total_letters = calculate_number_to_words(1, 1000)
+# print(total_letters)
+
+
+
+
+
 
 
